@@ -1,6 +1,20 @@
 (function($) {
 	"use strict";
 
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDOf1ldKZSbiMbk8ctk1u9bpHlzfAY2APU",
+		authDomain: "contactform-d5393.firebaseapp.com",
+		databaseURL: "https://contactform-d5393.firebaseio.com",
+		projectId: "contactform-d5393",
+		storageBucket: "contactform-d5393.appspot.com",
+		messagingSenderId: "160944880879"
+	  };
+	firebase.initializeApp(config);
+
+	var contactRef = firebase.database().ref('contact');
+	
+
 	$(window).on('load', function() {
 	    $(".preloader").fadeOut("slow", function() {
 	        $(".preloader-left").addClass("slide-left");
@@ -169,6 +183,30 @@
 	    $(this).addClass('active');
 	    $('.inline-menu-container.style2').removeClass('dark');
 	});
+
+	//Contact Form Submit
+	$('#contactForm').on('submit', function(e) {
+		e.preventDefault();
+		var name = $('#name').val();
+		var email = $('#email').val();
+		var message = $('#message').val();
+		saveMessage(name, email, message);
+		$("#contactForm")[0].reset(),submitMSG(!0,"Message Submitted!")
+		setTimeout(function(){
+			$('#msgSubmit').hide();
+		},3000)
+	})
+
+	//Save Contact Message Function
+	function saveMessage(name, email, message) {
+		var newContactRef = contactRef.push();
+		newContactRef.set({
+			name: name,
+			email: email,
+			message: message
+		})
+	}
+
 
 	// Intialize Map
 	// google.maps.event.addDomListener(window, 'load', init);
