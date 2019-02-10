@@ -884,7 +884,7 @@ h2.menu-item:after {
 }
 
 .block-content {
-    margin: 0 0 70px;
+    margin: 0 0 20px;
     overflow: hidden;
 }
 
@@ -1103,7 +1103,7 @@ h2.menu-item:after {
 
 .progress {
     height: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     background-color: #ddd;
     border-radius: 0;
     box-shadow: none;
@@ -1121,9 +1121,9 @@ h2.menu-item:after {
 
 .progress-bar span {
     display: block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     text-align: center;
     color: #000;
     background: #F1F3F6;
