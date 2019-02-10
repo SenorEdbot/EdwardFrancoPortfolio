@@ -702,8 +702,9 @@ h2.menu-item:after {
 }
 
 #close i {
-    font-size: 30px;
-    vertical-align: middle
+    font-size: 38px;
+    vertical-align: middle;
+    color: red;
 }
 
 .inline-menu {
