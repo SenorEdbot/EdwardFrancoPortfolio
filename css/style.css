@@ -1065,9 +1065,9 @@ h2.menu-item:after {
 }
 
 .subheading {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 300;
-    line-height: 2em;
+    line-height: 1.5em;
     margin-bottom: 30px;
     text-transform: none;
 }
@@ -1137,7 +1137,7 @@ h2.menu-item:after {
 .progress-bar-label {
     color: #333;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .progress-bar-label span {
@@ -1394,7 +1394,7 @@ h2.menu-item:after {
     font-weight: 400;
     text-align: right;
     color: #727272;
-    padding-left: 60px;
+    padding-left: 15px;
     position: relative;
 }
 
@@ -1402,7 +1402,7 @@ h2.menu-item:after {
     color: #ddd;
     content: "/";
     left: 0;
-    left: 30px;
+    left: 2px;
     position: absolute;
 }
 
@@ -2334,7 +2334,19 @@ h4.package {
 
 /*-------------------------------------------------------------------
 
-                        10. RESPONSIVE
+                        10. ED
+
+-------------------------------------------------------------------*/
+.skills-p {
+    margin-bottom: 7px;
+    padding-left: 15px;
+}
+
+
+
+/*-------------------------------------------------------------------
+
+                        11. RESPONSIVE
 
 -------------------------------------------------------------------*/
 
@@ -2843,6 +2855,7 @@ h4.package {
     .exp .hgroup h4,
     .exp .hgroup h5 {
         display: table;
+        padding-right: 0;
     }
     .exp .hgroup h5 {
         padding-left: 0;
