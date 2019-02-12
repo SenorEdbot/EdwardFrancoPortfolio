@@ -859,7 +859,7 @@ h2.menu-item:after {
 
 .content {
     position: relative;
-    padding: 120px 70px 30px;
+    padding: 120px 50px 30px;
     height: auto;
     overflow: hidden;
 }
@@ -2347,7 +2347,7 @@ h4.package {
     margin-block-start: 0;
 } */
 #peskyDate1 {
-    padding-left: 4px;
+    padding-left: 8px;
 }
 
 
