@@ -1390,11 +1390,11 @@ h2.menu-item:after {
 }
 
 .exp2 .hgroup h5 {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 300;
     text-align: right;
     color: #727272;
-    padding-left: 15px;
+    padding-left: 10px;
     position: relative;
 }
 
@@ -1402,7 +1402,7 @@ h2.menu-item:after {
     color: #ddd;
     content: "/";
     left: 0;
-    left: 2px;
+    left: 1px;
     position: absolute;
 }
 
@@ -2340,6 +2340,14 @@ h4.package {
 .skills-p {
     margin-bottom: 7px;
     padding-left: 15px;
+}
+
+/* h4 {
+    margin-block-end: 0;
+    margin-block-start: 0;
+} */
+#peskyDate1 {
+    padding-left: 4px;
 }
 
 
